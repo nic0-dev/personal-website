@@ -176,10 +176,10 @@ export default function CallToActionSection() {
               </div>
               <div className="z-10 mt-4 flex flex-col items-center text-center text-primary">
                 <h1 className="text-3xl font-bold lg:text-4xl">
-                  Stop wasting time on design.
+                  Interested to work with me?
                 </h1>
                 <p className="mt-2">
-                  Start your 7-day free trial. No credit card required.
+                  Connect with me and let&apos;s build something amazing together.
                 </p>
                 <Link
                   href="#"
@@ -191,7 +191,7 @@ export default function CallToActionSection() {
                     "group mt-4 rounded-[2rem] px-6"
                   )}
                 >
-                  Get Started
+                  Linked In
                   <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>
               </div>

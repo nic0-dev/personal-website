@@ -10,7 +10,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 export const metadata: Metadata = {
-  title: "Mark Cagas | Portfolio",
+  title: "Mark | Portfolio",
   description: "Mark's Personal Website",
 };
 
