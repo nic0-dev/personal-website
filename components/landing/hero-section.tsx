@@ -24,17 +24,17 @@ export default function HeroSection() {
       </div>
       <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
       {/* <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]"> */}
-        Hello, I&apos;m Mark 
+        Hello, I&apos;m Mark,&nbsp;
         <br className="hidden md:block" />
         <span className="whitespace-nowrap">
           and I love to
           {/* <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium sm:text-6xl md:text-7xl lg:text-8xl"> */}
-          <WordRotate words={["innovate", "design", "build", "architect", "lead", "succeed"]}/>
+          <WordRotate words={["innovate", "design", "build", "architect", "lead"]}/>
           {/* </h1> */}
         </span>
       </h1>
       <p className="mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-        I&apos;m a Computer Engineering student from
+        I&apos;m a Computer Engineering student at
         <br className="hidden md:block" /> the University of the Philippines Diliman.
       </p>
       <Button className="translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]">

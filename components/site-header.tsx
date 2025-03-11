@@ -4,29 +4,35 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import { AlignJustify, XIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const menuItem = [
   {
     id: 1,
-    label: "Features",
-    href: "/features",
+    label: "Home",
+    href: "#",
   },
   {
     id: 2,
-    label: "Pricing",
-    href: "#",
+    label: "About Me",
+    href: "/about",
   },
   {
     id: 3,
-    label: "Careers",
-    href: "#",
+    label: "Work Experience",
+    href: "/experience",
   },
   {
     id: 4,
-    label: "Contact Us",
-    href: "#",
+    label: "Projects",
+    href: "/projects",
+  },
+  {
+    id: 5,
+    label: "Contact Me",
+    href: "/contact",
   },
 ];
 
@@ -98,7 +104,12 @@ export function SiteHeader() {
   return (
     <>
       <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
-        <div className="container flex h-[3.5rem] items-center justify-between gap-16">
+        <div className="container flex h-[3.5rem] items-center justify-between gap-16 hidden md:flex">
+          <Link className="text-md flex items-center" href="/">
+            <Image src="/mark-icon.svg" alt="Mark's Logo"
+              width={40} height={40}
+            />
+          </Link>
           <Link className="text-md flex items-center" href="/">
             Home
           </Link>
@@ -133,14 +144,14 @@ export function SiteHeader() {
             >
               Sign up
             </Link>
-          </div>
+          </div> */}
           <button
             className="ml-6 md:hidden"
             onClick={() => setHamburgerMenuIsOpen((open) => !open)}
           >
             <span className="sr-only">Toggle menu</span>
             {hamburgerMenuIsOpen ? <XIcon /> : <AlignJustify />}
-          </button> */}
+          </button>
         </div>
       </header>
       <AnimatePresence>
@@ -162,7 +173,7 @@ export function SiteHeader() {
             </Link>
 
             <button
-              className="ml-6 md:hidden"
+              className="ml-6"
               onClick={() => setHamburgerMenuIsOpen((open) => !open)}
             >
               <span className="sr-only">Toggle menu</span>
