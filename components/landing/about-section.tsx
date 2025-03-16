@@ -22,7 +22,7 @@ export default function AboutSection() {
     <>
       I am a {age}-year-old experienced <span className="font-bold">Software Engineer </span>
       who is passionate about exploring new ideas and technologies. I enjoy tackling challenges, and I am always 
-      on the lookout for opportunities to learn and grow, both personally and professionally. Moreover, my ambition 
+      on the lookout for opportunities to learn and grow, both personally and professionally.<br/><br/>Moreover, my ambition 
       is fueled by a desire to use my technical expertise to craft systems that significantly <span className="underline">
       improve everyday life and streamline business operations</span>. I believe in continuous improvement and 
       always strive to contribute positively to my community.
@@ -36,9 +36,9 @@ export default function AboutSection() {
           About me
         </TextAnimate>
         <div className="w-full mt-12 border-y flex flex-col-reverse lg:flex-row gap-8">
-          <div className="w-full mx-auto max-w-screen-xl text-justify py-14 px-8 flex flex-col gap-8">
+          <div className="w-full mx-auto max-w-screen-xl text-left py-14 px-8 flex flex-col gap-8">
             <div className="flex flex-row gap-4">
-              <div className="h-auto w-4 bg-blue-600"></div>
+              <div className="h-auto w-2 bg-[#a371f7]"></div>
               <span>{description}</span>
             </div>
 
