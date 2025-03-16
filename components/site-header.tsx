@@ -13,31 +13,41 @@ const menuItem = [
   {
     id: 1,
     label: "Home",
-    href: "#",
+    href: "#home",
   },
   {
     id: 2,
     label: "About Me",
-    href: "/about",
+    href: "#about",
   },
   {
     id: 3,
     label: "Work Experience",
-    href: "/experience",
+    href: "#experience",
   },
   {
     id: 4,
     label: "Projects",
-    href: "/projects",
+    href: "#projects",
   },
   {
     id: 5,
     label: "Contact Me",
-    href: "/contact",
+    href: "#contact",
   },
 ];
 
 export function SiteHeader() {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(target);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+    // Optionally close the hamburger menu if it is open.
+    setHamburgerMenuIsOpen(false);
+  };
+
   const mobilenavbarVariant = {
     initial: {
       opacity: 0,
@@ -106,27 +116,27 @@ export function SiteHeader() {
     <>
       <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
         <div className="container hidden h-[3.5rem] items-center justify-between gap-16 md:gap-8 md:flex">
-          <Link className="text-md flex items-center" href="/">
+          <Link className="text-md flex items-center" href="" onClick={(e) => handleSmoothScroll(e, "#home")}>
             <Image src="/mark-icon.svg" alt="Mark's Logo"
               width={40} height={40}
             />
           </Link>
-          <Link className="text-md flex items-center" href="/">
+          <Link className="text-md flex items-center" href="" onClick={(e) => handleSmoothScroll(e, "#home")}>
             Home
           </Link>
-          <Link className="text-md flex items-center" href="/">
+          <Link className="text-md flex items-center" href="" onClick={(e) => handleSmoothScroll(e, "#about")}>
             About Me
           </Link>
-          <Link className="text-md flex items-center" href="/">
+          <Link className="text-md flex items-center" href="" onClick={(e) => handleSmoothScroll(e, "#experience")}>
             Work Experience
           </Link>
-          <Link className="text-md flex items-center" href="/">
+          <Link className="text-md flex items-center" href="" onClick={(e) => handleSmoothScroll(e, "#projects")}>
             Projects
           </Link>
 
           <div className="ml-auto flex h-full items-center">
             <RainbowButton className="mr-6 text-sm h-10">
-              <Link href="/">Contact Me</Link>
+              <Link href="" onClick={(e) => handleSmoothScroll(e, "#contact")}>Contact Me</Link>
             </RainbowButton>
           </div>
         </div>
@@ -182,7 +192,8 @@ export function SiteHeader() {
                   className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
                     hamburgerMenuIsOpen ? "[&_a]:translate-y-0" : ""
                   }`}
-                  href={item.href}
+                  href=""
+                  onClick={(e) => handleSmoothScroll(e, item.href)}
                 >
                   {item.label}
                 </Link>

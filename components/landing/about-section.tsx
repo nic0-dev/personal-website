@@ -30,7 +30,7 @@ export default function AboutSection() {
   );
 
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-24">
       <div className="w-full mt-64 mx-auto flex flex-col">
         <TextAnimate className="font-light text-center" animation="blurInUp" by="character" once>
           About me
@@ -53,11 +53,10 @@ export default function AboutSection() {
               <div className="w-full border-t mb-4"></div>
               <CardContent>
                 <div className="flex items-center text-sm text-muted-foreground"><ChevronRight size={16} className="mr-1"/><span className="text-white">DOST-SEI Merit Scholar</span></div>
-                <div className="flex items-start text-sm text-muted-foreground">
-                <ChevronRight size={24} className="mr-1" />
-                <span className="mt-[2px]"><span className="text-white">Coursework: </span> 
-                  Data Structures and Algorithms, Object-Oriented Programming, Software Engineering, IoT, Embedded Systems, Blockchain, Cloud Computing</span>
-                </div>
+                <div className="flex items-center text-sm text-muted-foreground"><ChevronRight size={16} className="mr-1"/><span className="text-white">Coursework: </span></div>
+                <span className="flex text-sm text-muted-foreground pl-[20px]">
+                  Data Structures and Algorithms, Object-Oriented Programming, Software Engineering, IoT, Embedded Systems, Blockchain, Cloud Computing
+                </span>
               </CardContent>
             </Card>
 
@@ -72,12 +71,10 @@ export default function AboutSection() {
               <div className="w-full border-t mb-4"></div>
               <CardContent>
                 <div className="flex items-center text-sm text-muted-foreground"><ChevronRight size={16} className="mr-1"/><span className="text-white">Graduated with High Honors</span></div>
-                <div className="flex items-start text-sm text-muted-foreground">
-                  <ChevronRight size={24} className="mr-1" />
-                  <span className="mt-[2px]"><span className="text-white">Achievements: </span> 
-                    Highest Extracurricular Distinction, National Olympiad in Informatics (NOI) Finalist (AY 2018-2021), Computer Society President, Science Club Vice President
-                  </span>
-                </div>
+                <div className="flex items-center text-sm text-muted-foreground"><ChevronRight size={16} className="mr-1"/><span className="text-white">Achievements: </span></div>
+                <span className="flex text-sm text-muted-foreground pl-[20px]">
+                  Highest Extracurricular Distinction, National Olympiad in Informatics (NOI) Finalist (AY 2018-2021), Computer Society President, Science Club Vice President
+                </span>
               </CardContent>
             </Card>
           </div>
