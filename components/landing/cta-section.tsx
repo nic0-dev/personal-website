@@ -3,6 +3,7 @@
 import Marquee from "@/components/magicui/marquee";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { motion, useAnimation, useInView } from "framer-motion";
 import {
   BarChart,
@@ -182,7 +183,7 @@ export default function CallToActionSection() {
                   Connect with me and let&apos;s build something amazing together.
                 </p>
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/in/marknicholascagas/"
                   className={cn(
                     buttonVariants({
                       size: "lg",
@@ -190,7 +191,9 @@ export default function CallToActionSection() {
                     }),
                     "group mt-4 rounded-[2rem] px-6"
                   )}
+                  target="_blank"
                 >
+                  <LinkedInLogoIcon className="mr-1 size-4" />
                   Linked In
                   <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
                 </Link>

@@ -7,6 +7,7 @@ import { AlignJustify, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { RainbowButton } from "./magicui/rainbow-button";
 
 const menuItem = [
   {
@@ -124,12 +125,9 @@ export function SiteHeader() {
           </Link>
 
           <div className="ml-auto flex h-full items-center">
-            <Link className={cn(
-                buttonVariants({ variant: "default" }),
-                "mr-6 text-sm"
-              )} href="/">
-              Contact Me
-            </Link>
+            <RainbowButton className="mr-6 text-sm h-10">
+              <Link href="/">Contact Me</Link>
+            </RainbowButton>
           </div>
         </div>
         <div className="container flex h-[3.5rem] items-center justify-between md:hidden">
