@@ -125,7 +125,7 @@ export default function CallToActionSection() {
   }, []);
 
   return (
-    <section id="cta">
+    <section id="contact" className="scroll-mt-[-3.5rem">
       <div className="py-14">
         <div className="flex w-full flex-col items-center justify-center">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
