@@ -35,11 +35,12 @@ export default function AboutSection() {
         <TextAnimate className="font-light text-center" animation="blurInUp" by="character" once>
           About me
         </TextAnimate>
-        <div className="w-full mt-12 border-y flex flex-col-reverse lg:flex-row gap-8">
-          <div className="w-full mx-auto max-w-screen-xl text-left py-14 px-8 flex flex-col gap-8">
+        <div className="w-full mt-12 border-y flex flex-col-reverse lg:flex-row md:gap-8">
+          <div className="w-full mx-auto max-w-screen-xl text-left py-8 px-8 flex flex-col gap-2 md:gap-4">
+            <h3 className="text-[#a371f7] font-semibold">Summary</h3>
             <div className="flex flex-row gap-4">
               <div className="h-auto w-2 bg-[#a371f7]"></div>
-              <span>{description}</span>
+              <span className="text-[10px] md:text-sm leading-4 md:leading-normal">{description}</span>
             </div>
 
             <Card className="text-left">
