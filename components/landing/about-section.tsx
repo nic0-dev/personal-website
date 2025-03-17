@@ -30,8 +30,8 @@ export default function AboutSection() {
   );
 
   return (
-    <section id="about" className="scroll-mt-24">
-      <div className="w-full mt-64 mx-auto flex flex-col">
+    <section id="about" className="scroll-mt-32">
+      <div className="w-full my-32 mx-auto flex flex-col">
         <TextAnimate className="font-light text-center" animation="blurInUp" by="character" once>
           About me
         </TextAnimate>
