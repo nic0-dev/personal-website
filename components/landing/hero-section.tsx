@@ -36,8 +36,8 @@ export default function HeroSection() {
           <WordRotate words={["innovate", "design", "build", "architect", "lead"]} />
         </span>
       </h1>
-      <p className="mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-        Full-Stack Software Engineer from
+      <p className="mb-12 text-md tracking-tight text-gray-400 text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+        Full-Stack Software Engineer and a Graduating Magna Cum Laude from
         <br className="hidden md:block" /> the University of the Philippines Diliman.
       </p>
       <a href="/resume.pdf" download>

@@ -32,7 +32,7 @@ const companies: Company[] = [
     label: "Manulife IT Delivery Center Asia, Inc.",
     position: "Full Stack Software Engineer Intern",
     details:
-      "At Manulife, Collaborated in the development of a reactive microservices-based document management system in an Agile environment, resolving 4 backlog tickets and integrating 3 external APIs. I also streamlined CI/CD pipelines, implementing test-driven development to ensure timely delivery of incremental code changes and reducing post-deployment issues by 25%.",
+      "At Manulife, I worked on developing a reactive, microservices-based document portal, and implemented a custom validation feature that dynamically renders form fields based on client payload. I also created 2 endpoints for different consumer markets, completing 18 user stories in 2 sprints.",
     techStack: ["Angular", "Spring Booth", "Node", "MongoDB", "Bitbucket", "Jenkins", "GraphQL", "Azure", "Snyk", "SonarQube", "Jira"]
   },
   {
@@ -123,10 +123,10 @@ export default function ExperienceSection() {
                 </div>
                 <div className="relative z-10">
                   <div className="flex flex-col gap-0">
-                    <span className="text-[10px] md:text-xs text-muted-foreground leading-3 md:leading-normal">
+                    <span className="text-[12px] md:text-xs text-muted-foreground leading-3 md:leading-normal">
                       {company.category}
                     </span>
-                    <span className="text-[10px] md:text-xs leading-3 md:leading-normal">
+                    <span className="text-[12px] md:text-xs leading-3 md:leading-normal">
                       {company.label}
                     </span>
                   </div>
@@ -140,10 +140,10 @@ export default function ExperienceSection() {
               <><div>
                 <h4 className="text-sm text-[#a371f7] font-semibold mb-1">{selectedCompany.position}</h4>
                 <h3 className="text-lg font-semibold">{selectedCompany.label}</h3>
-                <p className="text-[10px] md:text-sm mt-2 leading-4 md:leading-normal">{selectedCompany.details}</p>
+                <p className="text-[12px] md:text-sm mt-2 leading-4 md:leading-normal">{selectedCompany.details}</p>
               </div><div>
                 <h4 className="text-sm text-[#a371f7] pt-4">Tools / Tech Stack: </h4>
-                <p className="text-[10px] md:text-sm leading-4 md:leading-normal text-muted-foreground">
+                <p className="text-[12px] md:text-sm leading-4 md:leading-normal text-muted-foreground">
                   {selectedCompany.techStack.join(" | ")}
                 </p>
               </div></>

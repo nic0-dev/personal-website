@@ -40,7 +40,7 @@ export default function AboutSection() {
             <h3 className="text-[#a371f7] font-semibold">Summary</h3>
             <div className="flex flex-row gap-4">
               <div className="h-auto w-2 bg-[#a371f7]"></div>
-              <span className="text-[10px] md:text-sm leading-4 md:leading-normal">{description}</span>
+              <span className="text-[12px] md:text-sm leading-4 md:leading-normal">{description}</span>
             </div>
 
             <Card className="text-left">

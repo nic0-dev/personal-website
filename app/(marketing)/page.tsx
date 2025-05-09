@@ -6,6 +6,7 @@ import AboutSection from "@/components/landing/about-section";
 import ExperienceSection from "@/components/landing/experience-section";
 import Particles from "@/components/magicui/particles";
 import { SphereMask } from "@/components/magicui/sphere-mask";
+import ProjectSection from "@/components/landing/project-section";
 
 export default async function Page() {
   return (
@@ -16,6 +17,7 @@ export default async function Page() {
       <AboutSection />
       {/* <PricingSection /> */}
       <ExperienceSection />
+      {/* <ProjectSection /> */}
       <CallToActionSection />
       <Particles
         className="absolute inset-0 -z-10"
